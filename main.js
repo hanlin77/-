@@ -143,6 +143,24 @@ function fighterMove(t, speed) {
 
     function mobileShoot() {
 
+        document.addEventListener('touchstart', function (event) {
+    
+            if (event.cancelable) {
+                if (!event.defaultPrevented) {
+                    event.preventDefault();
+                }
+            }
+        }, false);
+
+        document.addEventListener('touchmove', function (event) {
+    
+            if (event.cancelable) {
+                if (!event.defaultPrevented) {
+                    event.preventDefault();
+                }
+            }
+        }, false);
+
         fighter.ontouchstart = (event) => {
 
             let originalX = parseInt(window.getComputedStyle(fighter, null).getPropertyValue("left"));
