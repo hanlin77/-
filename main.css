@@ -1,25 +1,25 @@
- body {
-     margin: 0;
-     background: #666;
- }
+body {
+    margin: 0;
+    background: #666;
+}
  
- #startDiv {
-     position: absolute;
-     top: 0;
-     left: 0;
-     bottom: 0;
-     right: 0;
-     margin: auto;
-     background: #fff;
-     width: 300px;
-     height: 150px;
-     text-align: center;
-     border-radius: 5px;
- }
- #startDiv p {
-     margin: 30px 0;
- }
- #endDiv {
+#startDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #fff;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    border-radius: 5px;
+}
+#startDiv p {
+    margin: 30px 0;
+}
+#endDiv {
     display: none;
     position: absolute;
     top: 0;
@@ -32,9 +32,9 @@
     height: 150px;
     text-align: center;
     border-radius: 5px;
- }
+}
 
- .button {
+.button {
     background: #eee;
     height: 30px;
     width: 80px;
@@ -42,27 +42,30 @@
     box-shadow: 2px 2px 2px #aaa;
     outline: none;
     margin: 0 10px;
- }
+}
 
- #fighter {
-     height: 50px;
-     width: 50px;
-     background: #fff;
-     position: absolute;
-     bottom: 50px;
-     left: 0;
-     cursor: default;
- }
+#fighter {
+    height: 50px;
+    width: 50px;
+    background: #fff;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    cursor: default;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
 
- .enemy {
-     height: 40px;
-     width: 40px;
-     background: red;
-     position: absolute;
- }
- .bullet {
-     height: 10px;
-     width: 8px;
-     background: #eee;
-     position: absolute;
- }
+.enemy {
+    height: 40px;
+    width: 40px;
+    background: red;
+    position: absolute;
+}
+.bullet {
+    height: 10px;
+    width: 8px;
+    background: #eee;
+    position: absolute;
+}
