@@ -195,6 +195,11 @@ function fighterMove(t, speed) {
                 }, 30)
             }, 200)
 
+            //阻止默认滑动
+            document.addEventListener("touchmove", (event) => {
+                event.preventDefault();
+            }, { passive: false })
+
             //飞机跟随手势移动
             document.ontouchmove = (event) => {
                 touch = event.touches[0];
