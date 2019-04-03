@@ -143,6 +143,11 @@ function fighterMove(t, speed) {
 
     function mobileShoot() {
 
+        //阻止页面默认滑动
+        document.addEventListener("touchmove", (event) => {
+            event.preventDefault();
+        }, { passive: false })
+
         fighter.ontouchstart = (event) => {
 
             let originalX = parseInt(window.getComputedStyle(fighter, null).getPropertyValue("left"));
@@ -194,11 +199,6 @@ function fighterMove(t, speed) {
                     }
                 }, 30)
             }, 200)
-
-            //阻止默认滑动
-            document.addEventListener("touchmove", (event) => {
-                event.preventDefault();
-            }, { passive: false })
 
             //飞机跟随手势移动
             document.ontouchmove = (event) => {
