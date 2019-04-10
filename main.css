@@ -4,7 +4,7 @@ body {
     touch-action: none;
 }
  
-#startDiv {
+#startDiv, noscript {
     position: absolute;
     top: 0;
     left: 0;
@@ -69,4 +69,15 @@ body {
     width: 8px;
     background: #eee;
     position: absolute;
+}
+
+noscript {
+    width: 260px;
+    height: 90px;
+    padding: 30px 20px;
+    font-size: 14px;
+    line-height: 26px;
+}
+noscript span {
+    color: red;
 }
